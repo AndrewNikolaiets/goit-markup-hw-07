@@ -20,10 +20,7 @@
 
 .footer-logo {
     font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font (26px, 700, 1.19, 0.03em);
     color: #2196f3;
 }
 
@@ -36,25 +33,22 @@
 }
 
 .footer-address {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font (14px, 400, 1.71, 0.03em);
     color: #ffffff;
 }
 
 .footer-mail {
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
     transition: color var(--transition);
-}
-
-.footer-mail:hover,
-.footer-mail:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .footer-tel {
@@ -64,29 +58,24 @@
     color: rgba(255, 255, 255, 0.6);
     margin-top: 9px;
     transition: color var(--transition);
-}
-
-.footer-tel:hover,
-.footer-tel:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .footer-soc {
     width: 206px;
     height: 80px;
     padding-bottom: 100px;
-}
-
-.footer-soc:not(:last-child) {
-    margin-right: 70px;
+    &:not(:last-child) {
+            margin-right: 70px;
+        }
 }
 
 .footer-soc-text {
-    font-weight: 700;
+    @include font (14px, 700, 1.14, 0.03em);
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -112,13 +101,12 @@
     justify-content: center;
     fill: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill var(--transition);
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-    background-color: var(--accent-color);
-    fill: #ffffff;
+    fill var(--transition);
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            fill: #ffffff;
+        }
 }
 
 .footer-email {
@@ -140,19 +128,13 @@
 }
 
 .footer-email-btn {
+    @include font (16px, 700, 1.88, 0.06em);
     min-width: 200px;
     color: var(--primary-white-color);
-
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-
     display: flex;
     align-items: center;
     justify-content: center;

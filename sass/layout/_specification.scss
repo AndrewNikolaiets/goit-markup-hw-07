@@ -2,18 +2,21 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .specific {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.specific,
-.specific__item:last-child {
-    margin-right: 10px;
-}
+
 .specific__item {
     margin-right: 30px;
+    .specific,
+    &:last-child {
+            margin-right: 10px;
+        }
 }
+
 .specific__item-icon {
     display: flex;
     align-items: center;
@@ -24,19 +27,13 @@
     border-radius: 4px;
 }
 .specific__title {
+    @include font (14px, 700, 1.14, 0.03em);
     margin-top: 30px;
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-color);
 }
 .specific__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font (14px, 400, 1.71, 0.03em);
     color: var(--text-color);
 }

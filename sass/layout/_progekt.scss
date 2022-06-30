@@ -9,6 +9,10 @@
 .progekt-item {
     margin-right: 30px;
     position: relative;
+    .title-list,
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
 .progekt-text-box {
@@ -18,30 +22,18 @@
 }
 
 .progekt-text {
+    @include font (14px, 700, 1.14, 0.03em);
     padding-top: 27px;
     padding-bottom: 27px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
     background: rgba(47, 48, 58, 0.8);
-    
-}
-
-.title-list,
-.progekt-item:last-child {
-    margin-right: 0;
 }
 
 .progekt-title {
+    @include font (36px, 700, 1.16, 0.03em);
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-color);
 }

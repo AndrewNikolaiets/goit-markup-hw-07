@@ -36,15 +36,15 @@
     color: #afb1b8;
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color var(--transition);
+    border-color var(--transition);
+        &:hover,
+        &:focus {
+                color: var(--accent-color);
+                border-color: var(--accent-color);
+            }
 }
 
 .client__soc-icon {
     fill: currentColor;
 }
 
-.client__link:hover,
-.client__link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}

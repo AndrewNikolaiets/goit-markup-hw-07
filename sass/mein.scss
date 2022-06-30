@@ -1,12 +1,14 @@
 @import "./utils/vars";
 @import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+@import "./utils/mixins";
+
 
 @import "./components/container";
-@import "./components/basicelement";
-@import "./components/backdrop";
 @import "./components/button";
-@import "./components/link";
 @import "./components/img";
+@import "./components/modal";
 
 
 @import "./layout/header";
@@ -18,4 +20,4 @@
 @import "./layout/filters";
 @import "./layout/works";
 @import "./layout/footer";
-@import "./layout/modal";
+
